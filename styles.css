@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .titulo_principal{
+    text-align: center;
+    margin-top: 1%;
+    font-size: clamp(20px,5vw,3vw);
+}
+.nav_principal{
+    text-align: center;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+.nav_botao{
+    background-color: blue;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-content: center;
+}
+.link{
+    margin: 0px 10px 0px 10px;
+}
