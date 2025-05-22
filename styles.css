@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    height: 100dvh;
+    background: linear-gradient(rgb(0, 238, 255),rgb(0, 0, 78));
+    
+}
+main{
+    background-color: brown;
+    width: 100%;
+    height:100%
+}
  .titulo_principal{
     text-align: center;
     margin-top: 1%;
@@ -10,9 +20,10 @@
 }
 .nav_principal{
     text-align: center;
-    background-color: aquamarine;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
+
 }
 .nav_botao{
     background-color: blue;
@@ -20,7 +31,12 @@
     height: 40px;
     justify-content: center;
     align-content: center;
+    border-radius: 20px;
+
 }
 .link{
-    margin: 0px 10px 0px 10px;
+    margin: 5px 10px 5px 10px;
+    opacity: 1;
+    text-decoration: none;
+    color: white;
 }
