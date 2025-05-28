@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:rgb(10, 10, 41);
+  background-image: url("https://www.transparenttextures.com/patterns/gravel.png");
+  color: white;
+}
+.section_peixes{
+  display: flex;
+}
+#titulo_principal{
+  text-align: center;
+}
+.img_peixes{
+  width: 400px;
+  height: 300px;
+  
+}
