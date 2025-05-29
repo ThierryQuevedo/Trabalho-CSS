@@ -1,8 +1,61 @@
 *{
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
+}
+body{
+    background-color: #06021a;
+    background-image: url("https://www.transparenttextures.com/patterns/gravel.png");
+}
+main{
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: 
+    "h1 h1 h1"
+    ". section ."
+    ;
+}
+main h1{
+    grid-area: h1;
+    margin: 10px 0px 10px 0px;
+    font-size: clamp(10px, 30vw, 30px);
+}
+section{
+    margin: 20px 20px 20px 20px;
+    grid-column: 2;
+    background-color: rgba(217, 217, 217, 0.058);
+    padding: 10px;
+    border-radius: 20px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+article h2{
+    text-align: left;
+    margin-left: 10px;
+}
+li{
+    margin-left: 8%;
+    text-align: left;
+    font-size: clamp(10px,20px,30px);
+}
+li:first-child{
+    margin-top: 10px;
+}
+li:last-child{
+    margin-bottom: 10px;
 }
 .img_peixes{
-    width: 30vw;
+    width: clamp(20vw,30vw,20px);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    
+}
+.div_peixes{
+    display: flex;
+
 }
