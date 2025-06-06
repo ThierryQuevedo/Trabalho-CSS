@@ -3,9 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+@keyframes fade{
+    from{
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
 body{
-    background-color: #06021a;
-    background-image: url("https://www.transparenttextures.com/patterns/gravel.png");
+    background: linear-gradient(rgb(0, 0, 125),rgb(0, 0, 0));
 }
 main{
     color: white;
@@ -16,7 +25,7 @@ main{
     "h1 h1 h1"
     ". section ."
     ;
-}
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");}
 main h1{
     grid-area: h1;
     margin: 10px 0px 10px 0px;
@@ -28,6 +37,7 @@ section{
     background-color: rgba(217, 217, 217, 0.058);
     padding: 10px;
     border-radius: 20px;
+    animation: fade 1s ease-in-out;
 }
 article{
     display: flex;
