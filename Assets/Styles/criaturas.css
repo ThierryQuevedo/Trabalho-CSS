@@ -13,31 +13,60 @@
       transform: translateY(0px);
     }
   }
+  @keyframes anuncio{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
+  @font-face {
+    font-family: 'titulo';
+    src: url('../Fontes/IMFellEnglishSC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 body{
-    background: linear-gradient(rgb(0, 0, 125),rgb(0, 0, 0));
+    background: linear-gradient(rgb(0, 0, 90),rgb(0, 0, 0));
 }
 main{
     color: white;
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 10fr 1fr;
     grid-template-areas: 
     "h1 h1 h1"
     ". section ."
     ;
+    padding-top: 10px;
     background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");}
 main h1{
     grid-area: h1;
-    margin: 10px 0px 10px 0px;
-    font-size: clamp(10px, 30vw, 30px);
+    margin-top: 10px;
+    font-size: clamp(12px, 32vw, 32px);
+    font-family: 'titulo', sans-serif ;
 }
 section{
-    margin: 20px 20px 20px 20px;
     grid-column: 2;
-    background-color: rgba(217, 217, 217, 0.058);
-    padding: 10px;
+    background-image: url("../Imagens/11488240.png");
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 70px 100px 70px 140px;
     border-radius: 20px;
     animation: fade 1s ease-in-out;
+    color: black;
+}
+aside{
+    animation: anuncio 6s ease-in-out ;
+}
+aside img{
+    grid-area: aside;
+    width: 100px;
+    height: 300px;
+    position: fixed;
+    transform: translate(-52px, 90px);
 }
 article{
     display: flex;
@@ -59,11 +88,23 @@ li:first-child{
 li:last-child{
     margin-bottom: 10px;
 }
+#x{
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    width: 5px;
+    height: 7px;
+    position: fixed;
+    transform: translate(93px, 92px);
+}
 .img_peixes{
     width: clamp(20vw,30vw,20px);
     border-radius: 10px;
     margin-bottom: 5px;
-    
+
+}
+#vermeR{
+    height: 17vw;
 }
 .div_peixes{
     display: flex;
