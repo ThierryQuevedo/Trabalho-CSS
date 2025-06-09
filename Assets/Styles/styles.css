@@ -49,20 +49,22 @@ main{
 .img_section{
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 40%;
+    width: 80%;
+    height: 10%;
+    border-radius: 11px; 
 }
-#img_tubarao{
+#img_link{
     width: 100px;
 }
 
-#img_tubarao:hover{
+#img_link:hover{
     transform: scale(1.08);
     cursor: pointer;
 }
-#img_tubarao:active{
+#img_link:active{
     transform: scale(0.9);
 }
-#texto_tubarao{
+#texto_link{
     text-shadow: 1px 1px 2px rgb(56, 56, 56);
     color: rgb(178, 186, 189);
 }
