@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+@keyframes fade{
+    from{
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
 body{
 
     background: linear-gradient(to bottom, #7FDBFF, #0074D9, #001F3F, #000000);
@@ -19,6 +29,7 @@ section{
     text-align: center;
     margin-bottom: 60px ;
     background-color: rgba(0, 0, 0, 0.247);
+    animation: fade 1s ease-in-out;
     border-radius: 20px;
     padding: 10px 10px 20px 10px;
 }
@@ -89,22 +100,6 @@ main{
     text-align: center;
     margin-top: 1%;
     font-size: clamp(20px,5vw,4vw);
-}
-.nav_principal{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-
-}
-.nav_botao{
-    background-color: blue;
-    width: 100px;
-    height: 40px;
-    justify-content: center;
-    align-content: center;
-    border-radius: 20px;
-
 }
 .link{
     margin: 5px 10px 5px 10px;

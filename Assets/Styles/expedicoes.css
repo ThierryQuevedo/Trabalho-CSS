@@ -3,8 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+@keyframes fade{
+    from{
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
 body{
-
     background: linear-gradient(to bottom,#87CEFA, #00BFFF, #1E90FF, #4169E1);
     min-height: 100vh;
     display: flex;
@@ -23,6 +32,7 @@ section{
     border-radius: 10px;
     margin-left: 10%;
     margin-right: 10%;
+    animation: fade 1s ease-in-out;
     padding-bottom: 10px;
     padding: 10px 10px 10px 10px;
 }
@@ -32,7 +42,7 @@ footer h6{
     
 }
 footer{
-    background-color: rgba(130, 129, 129, 0.114);
+    background-color: rgb(59, 59, 59);
     padding-top: 3px;
     padding-bottom: 3px;
 
@@ -56,8 +66,8 @@ main{
 .img_exp{
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 40%;
     border-radius: 20px;
+    max-width: 90%;
 }
 
 #deepsea{
