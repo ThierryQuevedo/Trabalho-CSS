@@ -57,6 +57,12 @@ main{
     border-radius: 11px; 
     max-width: 1000px;
 }
+.img_section:hover{
+    transform: scale(1.01);
+}
+.img_section:active{
+    transform: scale(0.995);
+}
 #img_link{
     width: 100px;
 }
@@ -98,22 +104,7 @@ main{
     border-radius: 25px;
     margin: 10px auto;
 }
-.nav_principal{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
 
-}
-.nav_botao{
-    background-color: blue;
-    width: 100px;
-    height: 40px;
-    justify-content: center;
-    align-content: center;
-    border-radius: 20px;
-
-}
 .link{
     margin: 5px 10px 5px 10px;
     opacity: 1;
